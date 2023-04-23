@@ -1,0 +1,48 @@
+body {
+  background: light-grey;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+header,
+footer {
+  display: inline-block;
+  width: 100%;
+  height: 10rem;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+section {
+  display: block;
+  float: left;
+  width: 33.2%;
+  height: 30rem;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+
+}
+
+.border {
+  border: .05rem solid grey;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    float: none;
+    width: 100%;
+  }
+}
