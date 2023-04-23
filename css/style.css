@@ -1,5 +1,6 @@
 body {
   background: light-grey;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 auto;
 }
@@ -19,11 +20,18 @@ section {
   width: 33.2%;
   height: 30rem;
   margin: 0 auto 0 auto;
+  box-sizing: border-box;
 
 }
 
 .border {
   border: .05rem solid grey;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: red;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -33,14 +41,8 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  section {
     float: none;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  body {
-    background-color: red;
   }
 }
